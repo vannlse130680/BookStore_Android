@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/sologan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Add New Book"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        
+        />
+    <LinearLayout
+        android:id="@+id/linear_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/sologan_category"
+        >
+        <ImageView
+            android:id="@+id/book"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/add_book"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_manager_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Manager Order"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/linear_category_layout"
+        />
+    <LinearLayout
+        android:id="@+id/linear_manager_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/txt_manager_order"
+        >
+        <ImageView
+            android:id="@+id/check_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:src="@drawable/manager_order"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_customer_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Customer service"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/linear_manager_order"
+        />
+    <LinearLayout
+        android:id="@+id/linear_customer_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/txt_customer_service"
+        >
+        <ImageView
+            android:id="@+id/customer_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:src="@drawable/customerchat"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Log out"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+</RelativeLayout>
